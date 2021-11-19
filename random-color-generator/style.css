@@ -1,0 +1,86 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  background: #067453;
+}
+.container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#generate{
+  user-select: none;
+  background: #232323;
+  border-radius: 8px;
+  padding: 10px 40px;
+  margin: 10px 0;
+  color: white;
+  border: none;
+}
+.text{
+  color: #067453;
+  margin: 10px 0;
+  padding: 10px 22px;
+  background: white;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: ;
+}
+.text img{
+  width: 16px;
+  margin-left: 9px;
+}
+#color-text{
+  padding-right: 9px;
+  display: flex;
+  align-items: center;
+}
+button{
+  border: none;
+  background-color: transparent;
+}
+.copy-btn{
+  position: relative;
+}
+.copy-btn .hovertext {
+    visibility: hidden;
+    width: 140px;
+    background-color: rgb(55, 192, 62);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+ 
+.copy-btn .hovertext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(55, 192, 62) transparent transparent transparent;
+}
+  
+.copy-btn:hover .hovertext {
+    visibility: visible;
+    opacity: 1;
+}
+

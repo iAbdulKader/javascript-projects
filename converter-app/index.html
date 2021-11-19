@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Coverter App</title>
+</head>
+<body>
+    <div class="main center">
+        <div class="secondary center">
+            <h1> Converter App</h1>
+
+            <div class="content">
+                <h2>From</h2>
+                <select name="" id="input" onchange="convert()">
+                    <option value="Unit">Select A Unit</option>
+                    <option value="Centimetres">Centimetre</option>
+                    <option value="Metres">Metre</option>
+                    <option value="Inches">Inch</option>
+                    <option value="Feet">Feet</option>
+                    <option value="Kilometres">Kilometre</option>
+                    <option value="Miles">Mile</option>
+                </select>
+                <div class="input-text">
+                    <form onsubmit="return false">
+                        <input type="number" placeholder="Input" id="input-number">
+                    </form>
+        
+                    <h4 id="input-show">Unit</h4>
+                </div>
+                
+                <h2>To</h2>
+                <select name="" id="output" onchange="convert()">
+                    <option value="Unit">Select A Unit</option>
+                    <option value="Centimetres">Centimetre</option>
+                    <option value="Metres">Metre</option>
+                    <option value="Inches">Inch</option>
+                    <option value="Feet">Feet</option>
+                    <option value="Kilometres">Kilometre</option>
+                    <option value="Miles">Mile</option>
+                </select>
+                <div class="result">
+                    <h4 class="result-text" id="output-number">Result</h3>
+                    <h4 class="result-text" id="output-show">Unit</h4>
+                </div>
+                <h4 class="feet-inch-only" id="feet-inch-only"></h3>
+            </div>
+
+        </div>    
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
