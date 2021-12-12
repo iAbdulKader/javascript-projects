@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Simple Calculator Made With Vanilla Javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box out">
+        <h2 id="history">history</h2>
+        <h1 id="input"></h1>
+        <h1 id="result"></h1>
+        <div id="test">
+          
+        </div>
+      </div>
+      <div class="box operator">
+        <input type="button" onclick="calc(this.value)" id="ac" value="AC" />
+        <input type="button" onclick="calc(this.value)" id="bc" value="A" />
+        <input type="button" onclick="calc(this.value)" id="del" value="<" />
+        <input type="button" onclick="calc(this.value)" id="devide" value="/" />
+        <input type="button" onclick="calc(this.value)" id="nine" value="9" />
+        <input type="button" onclick="calc(this.value)" id="eight" value="8" />
+        <input type="button" onclick="calc(this.value)" id="seven" value="7" />
+        <input type="button" onclick="calc(this.value)" id="multiply" value="*" />
+        <input type="button" onclick="calc(this.value)" id="six" value="6" />
+        <input type="button" onclick="calc(this.value)" id="five" value="5" />
+        <input type="button" onclick="calc(this.value)" id="four" value="4" />
+        <input type="button" onclick="calc(this.value)" id="minus" value="-" />
+        <input type="button" onclick="calc(this.value)" id="three" value="3" />
+        <input type="button" onclick="calc(this.value)" id="two" value="2" />
+        <input type="button" onclick="calc(this.value)" id="one" value="1" />
+        <input type="button" onclick="calc(this.value)" id="plus" value="+" />
+        <input type="button" onclick="calc(this.value)" id="dzero" value="00" />
+        <input type="button" onclick="calc(this.value)" id="zero" value="0" />
+        <input type="button" onclick="calc(this.value)" id="period" value="." />
+        <input type="button" onclick="calc(this.value)" id="equal" value="=" />
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
